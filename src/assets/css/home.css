@@ -1,0 +1,203 @@
+
+@import "./form.css";
+
+
+header {
+    background-image: url(../../../public/imagem/barbershop-background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    min-height: 400px;
+    /*padding-top: 20px;*/
+}
+
+.navbox {
+    background-color: var(--shadow);
+    /*opacity: .7;*/
+}
+
+.logo img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: solid 4px var(--white);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+    height: 100%;
+    min-height: 400px;
+}
+
+.header-title,
+header .logo {
+    margin: 50px 25px;
+}
+
+.header-title {
+    font-size: 25px;
+    max-width: 400px;
+}
+
+/* Area de contato */
+.contact{
+    display: flex;
+}
+.contact-map,
+.contact-form{
+    padding: 40px;
+    width: 50%;
+}
+
+.left{
+    /* text-align: left; */
+    /* float: left; */
+    display: flex;
+    justify-content: start;
+}
+.right{
+    /* text-align: right; */
+    /* float: right; */
+    display: flex;
+    justify-content: end; 
+}
+ 
+/* área de comentários menu */
+.menu-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1280px;
+    padding: 20px;
+    
+}
+.menu-itens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 15px;
+    width: 33.33%;
+}
+
+.menu-itens img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    border: solid 2px var(--yellow);
+}
+
+/* serviços */
+.card-container {
+    padding: 80px 0;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--yellow);
+}
+
+.card {
+    margin: 10px;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 330px;
+    overflow: hidden;
+/* position: relative; */
+}
+.card-img{
+width: 100%;
+height: 200px;
+}
+
+.card-img img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
+.card-content{
+    /* top: 0;
+    left: 0; */
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* opacity: 0; */
+    /* transition: 0.6s;   */
+    color: var(--white);
+    background-color: var(--black);  
+    text-align: center;
+    padding: 10px;
+}
+/* .card-content:hover {
+    opacity: 1;
+} */
+.card-content h2 {
+    font-size: 20pt;
+    margin-bottom: 15px;
+
+}
+.card-content p {
+    font-size: 12pt;
+    margin-bottom: 15px;
+    /* padding-left: 17%; */
+}
+/* .card-content>* {
+    transform: translateY(25px);
+    transition: transform 0.6s;
+}
+
+.card-content:hover>* {
+    transform: translateY(0px);
+} */
+
+@media (max-width: 760px) {
+    .header-content {
+        flex-direction: column-reverse;
+    }
+
+    .header-title,
+    .header .logo{
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+@media print {
+    img {
+        display: none;
+    }
+
+    /* .contact {
+        display: none;
+    } */
+}
+
+@media (max-width:760px) {
+    .contact{
+        flex-direction: column;
+    }
+    .contact-map, .contact-form {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+
+    }
+
+}
