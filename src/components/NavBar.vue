@@ -1,71 +1,65 @@
 <template>
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-            <img
-                class="navbar-toggler"
-                src="imagem/barbershop-logo.jpg"
-                height="40"
-                alt=""
-            />
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <img
+        class="navbar-toggler"
+        src="imagem/barbershop-logo.jpg"
+        height="40"
+        alt=""
+      />
 
-            <button
-                class="navbar-toggler bg-yellow"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">INÍCIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#services"
-                            >SERVIÇOS</a
-                        >
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#about"
-                            >SOBRE NÓS</a
-                        >
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact"
-                            >CONTATO</a
-                        >
-                    </li>
-                </ul>
+      <button
+        class="navbar-toggler bg-yellow"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">INÍCIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#services">SERVIÇOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about">SOBRE NÓS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">CONTATO</a>
+          </li>
+        </ul>
 
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">ENTRAR</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">ENTRAR</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <script setup lang="ts"></script>
 
 <style>
 .navbar {
-    width: 100%;
-    backdrop-filter: blur(10px);
-    background-color: var(--shadow);
-    /* display: flex;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background-color: var(--shadow);
+  /* display: flex;
     align-items: flex-start;
     padding: 20px;
     flex-direction: row;
     justify-content: space-around; */
-    /* background-color: var(--black); */
-    /* position: sticky;
+  /* background-color: var(--black); */
+  /* position: sticky;
     top: 0 */
 }
 /* 
@@ -80,19 +74,19 @@
     }*/
 
 .navbar .nav-link {
-    text-decoration: none;
-    color: var(--white);
-    font-size: 1.5rem;
-    padding: 5px 15px;
-    transition: 0.3s ease;
-    border-bottom: solid 4px transparent;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.5rem;
+  padding: 5px 15px;
+  transition: 0.3s ease;
+  border-bottom: solid 4px transparent;
 }
 .navbar .nav-link:hover,
 .navbar .nav-link:active {
-    /* background-color: var(--yellow);
+  /* background-color: var(--yellow);
         border-radius: 5px;*/
-    color: var(--yellow);
-    border-bottom: solid 4px var(--yellow);
-    transition: 0.3s ease;
+  color: var(--yellow);
+  border-bottom: solid 4px var(--yellow);
+  transition: 0.3s ease;
 }
 </style>
