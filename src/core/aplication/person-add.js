@@ -1,6 +1,11 @@
-import { validateName, validateEmail, validateTel, validatePassword } from '../service/validator.js';
-import { Person } from "../domain/person.js";
-import {personService} from "../service/person.service.js"
+import {
+    validateName,
+    validateEmail,
+    validateTel,
+    validatePassword,
+} from "../service/validator.js"
+import { Person } from "../domain/person.js"
+import { personService } from "../service/person.service.js"
 
 validateName()
 validateEmail()
@@ -18,11 +23,10 @@ function getFormPerson() {
 }
 
 function submitForm() {
-const buttonSubmit = document.querySelector("#submitForm")
-buttonSubmit.addEventListener("click", () => {
-    const person = getFormPerson()
-    console.log(person)
-    personService.add(person)
-
-})
+    const buttonSubmit = document.querySelector("#submitForm")
+    buttonSubmit.addEventListener("click", () => {
+        const person = getFormPerson()
+        console.log(person)
+        personService.add(person)
+    })
 }

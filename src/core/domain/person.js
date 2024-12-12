@@ -7,8 +7,7 @@ export class Person {
     type = ""
     gender = ""
     document = ""
-    typeAccess = ""    
+    typeAccess = ""
 }
 
-export default new Person
-
+export default new Person()
