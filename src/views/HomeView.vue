@@ -1,7 +1,5 @@
 <template>
   <div>
-    <div id="navbar-component"></div>
-
     <header>
       <div class="navbox">
         <div class="header-content container">
@@ -21,7 +19,6 @@
         </div>
       </div>
     </header>
-
     <section id="services">
       <div class="card-container container" id="card-component">
         <CardService />
