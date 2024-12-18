@@ -32,8 +32,10 @@
       </div>
 
       <div>
-        <p>Novo Aqui? <a href="person-add.html">Cadastre-se</a></p>
-        <p><a href="person-recovery.html">Esqueceu a Senha?</a></p>
+        <p>Novo Aqui? <RouterLink to="/person-add">Cadastre-se</RouterLink></p>
+        <p>
+          <RouterLink to="/person-recovery">Esqueceu a Senha?</RouterLink>
+        </p>
       </div>
     </form>
   </section>

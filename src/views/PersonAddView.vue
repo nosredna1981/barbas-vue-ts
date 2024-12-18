@@ -22,6 +22,7 @@
             name="nome"
             required
             placeholder="Digite seu Nome"
+            v-model="person.name"
           />
         </div>
         <div id="nameHelp" class="form-text"></div>
@@ -41,6 +42,7 @@
             name="telefone"
             required
             placeholder=" Digite o seu Telefone"
+            v-model="person.telephone"
           />
         </div>
         <div id="telHelp" class="form-text"></div>
@@ -60,6 +62,7 @@
             name="email"
             required
             placeholder="Digite o Seu E-mail"
+            v-model="person.email"
           />
         </div>
         <div id="emailHelp" class="form-text"></div>
@@ -78,6 +81,7 @@
             aria-describedby="passwordHelp"
             name="password"
             placeholder=" Digite sua Senha"
+            v-model="person.password"
           />
         </div>
         <div id="passwordHelp" class="form-text"></div>
@@ -98,9 +102,14 @@
             aria-describedby="confPasswordHelp"
             name="confPassword"
             placeholder="Confirme sua Senha"
+            v-model="confPass"
           />
         </div>
-        <div id="confPasswordHelp" class="form-text"></div>
+        <div id="confPasswordHelp" class="form-text">
+          <span v-if="person.password !== confPass" class="text-danger">
+            Senha Inválida
+          </span>
+        </div>
       </div>
 
       <div class="mb-2">
@@ -129,7 +138,10 @@
 </template>
 
 <script setup lang="ts">
-
+import { ref } from "vue"
+import { Person } from "@/core/domain/person"
+const confPass = ref<string>("")
+const person = ref<Person>(new Person())
 </script>
 
 <style scoped>
