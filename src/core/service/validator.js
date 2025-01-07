@@ -28,7 +28,7 @@ export function validateEmail() {
     console.log(value)
     let error = ""
     // if (value.indexOF('@') === -1 || value.indexOF('.') === -1) {
-    const regexEmail = /^[a-z\d]+\@[a-z]+\.([a-z]{3})+$/g
+    const regexEmail = /^[a-z\d]+\\@[a-z]+\.([a-z]{3})+$/g
     if (!regexEmail.test(value)) {
       error = '<span class="text-danger"> E-mail inválido </span>'
     }
@@ -60,7 +60,7 @@ export function validatePassword() {
   element.addEventListener("keyup", (e) => {
     const value = e.target.value
     if (value.lenght < 8) {
-      menssage.innerHTML =
+      message.innerHTML =
         '<span class="text-danger"> Senha Muito curta! Minimo de 8 Caracteres </span>'
     } else {
       message.innerHTML = ""

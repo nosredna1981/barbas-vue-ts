@@ -26,13 +26,19 @@
             <RouterLink class="nav-link" to="index.html">INÍCIO</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="index.html#services">SERVIÇOS</RouterLink>
+            <RouterLink class="nav-link" to="index.html#services"
+              >SERVIÇOS</RouterLink
+            >
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="index.html#about">SOBRE NÓS</RouterLink>
+            <RouterLink class="nav-link" to="index.html#about"
+              >SOBRE NÓS</RouterLink
+            >
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="index.html#contact">CONTATO</RouterLink>
+            <RouterLink class="nav-link" to="index.html#contact"
+              >CONTATO</RouterLink
+            >
           </li>
         </ul>
 
