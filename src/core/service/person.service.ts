@@ -1,9 +1,10 @@
-import { addPerson } from "./../infra/person.repository.js"
+import { Person } from "../domain/person";
+import { addPerson } from "../infra/person.repository";
 export const personService = {
   add,
 }
 
-function add(person) {
+function add(person:Person) {
   addPerson(person)
     .then((res) => {
       console.log("Adicionado: ", res)
