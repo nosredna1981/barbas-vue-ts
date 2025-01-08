@@ -131,7 +131,7 @@
 
       <div class="my-2 form-group flex-row gap-2">
         <button type="reset">Cancelar</button>
-        <button type="button" id="submitForm">Enviar</button>
+        <button type="button" id="submitForm" @click="add()">Enviar</button>
       </div>
     </form>
   </section>
@@ -140,8 +140,12 @@
 <script setup lang="ts">
 import { ref } from "vue"
 import { Person } from "@/core/domain/person"
+import { personService } from "@/core/service/person.service"
 const confPass = ref<string>("")
-const person = ref<Person>(new Person())
+const person = ref<Person>(new Person());
+function add() {
+  personService.add(person.value):
+}
 </script>
 
 <style scoped>
