@@ -144,7 +144,7 @@ import { personService } from "@/core/service/person.service"
 const confPass = ref<string>("")
 const person = ref<Person>(new Person());
 function add() {
-  personService.add(person.value):
+  personService.add(person.value);
 }
 </script>
 
