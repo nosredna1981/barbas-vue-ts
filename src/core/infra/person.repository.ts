@@ -1,4 +1,4 @@
-import { Person } from "../domain/Person";
+import { Person } from "../domain/person";
 import {app} from "./firebase";
 import { getFirestore, collection, getDocs, addDoc, query, where } from 'firebase/firestore/lite';
 const db = getFirestore(app);

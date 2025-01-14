@@ -1,4 +1,4 @@
-import { Person } from "../domain/Person";
+import { Person } from "../domain/person";
 import { addPerson } from "../infra/person.repository";
 
 export const personService = {
