@@ -139,7 +139,7 @@
 
 <script setup lang="ts">
 import { ref } from "vue"
-import { Person } from "@/core/domain/person"
+import { Person } from "@/core/domain/Person"
 import { personService } from "@/core/service/person.service"
 const confPass = ref<string>("")
 const person = ref<Person>(new Person());
